@@ -17,7 +17,7 @@ export default function ModuleTile({
 
     const tileClickHandler = () => {
         if (!disabled) {
-            router.push(`/${module.slug}`);
+            router.push(`${router.pathname}/${module.slug}`);
         }
     };
 
