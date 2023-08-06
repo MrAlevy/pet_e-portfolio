@@ -22,7 +22,8 @@
             "@assets/*": ["./src/assets/*"],
             "@helpers": ["./src/helpers/index.ts"],
             "@types": ["./src/types/index.ts"],
-            "@constants": ["./src/constants/index.ts"]
+            "@constants": ["./src/constants/index.ts"],
+            "@config": ["./src/config.ts"]
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

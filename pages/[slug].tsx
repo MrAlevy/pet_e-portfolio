@@ -1,3 +1,4 @@
+import { rootPath } from '@config';
 import leftArrowIcon from '@assets/icons/left-arrow.svg';
 import Footer from '@components/Footer';
 import { ModuleSection } from '@components/ModuleSection';
@@ -67,7 +68,7 @@ export default function Module(props: {
                         }}
                         whileHover={{ scaleX: 1.02 }} // Add scaling animation on hover
                     >
-                        <Link href="/">
+                        <Link href={rootPath}>
                             <div
                                 className="text-3xl font-bold text-gray-600 text-center"
                                 style={{
@@ -326,7 +327,7 @@ export const getServerSideProps = async ({
     const edModule = MODULES_LIST.find((e) => e.slug === slug);
 
     if (!edModule) {
-        res.writeHead(302, { Location: process.env.NEXT_PUBLIC_ROOT_PATH });
+        res.writeHead(302, { Location: rootPath });
         res.end();
         return { props: {} };
     }
