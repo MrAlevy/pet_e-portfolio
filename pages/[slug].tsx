@@ -12,7 +12,7 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 
 export default function Module(props: {
-    module: IModule;
+    edModule: IModule;
     outcomes: string;
     artefacts: string;
     reflection: string;
@@ -47,7 +47,7 @@ export default function Module(props: {
     return (
         <div className="bg-gray-100">
             <Head>
-                <title>{props.module.title}</title>
+                <title>{props.edModule.title}</title>
                 <meta name="description" content="Learning outcomes and artefacts for the module" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
@@ -163,7 +163,7 @@ export default function Module(props: {
                             transform: 'scaleY(2.5)',
                         }}
                     >
-                        {props.module.title}
+                        {props.edModule.title}
                     </h1>
                 </div>
 
@@ -319,9 +319,9 @@ export const getServerSideProps = async ({
 
     const { slug } = params;
 
-    const module = MODULES_LIST.find((e) => e.slug === slug);
+    const edModule = MODULES_LIST.find((e) => e.slug === slug);
 
-    if (!module) {
+    if (!edModule) {
         res.writeHead(302, { Location: '/e-portfolio' });
         res.end();
         return { props: {} };
@@ -329,12 +329,12 @@ export const getServerSideProps = async ({
 
     const [outcomes, artefacts, reflection, notes, pdp] = getMarkdownContent({
         filenames: ['outcomes.md', 'artefacts.md', 'reflection.md', 'notes.md', 'pdp.md'],
-        moduleId: module.id,
+        moduleId: edModule.id,
     });
 
     return {
         props: {
-            module,
+            edModule,
             outcomes,
             artefacts,
             reflection,
