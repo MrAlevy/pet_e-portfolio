@@ -22,16 +22,18 @@ export const ModuleSection = (props: { id: string; title: string; content: strin
             <div className="pl-4 pr-4 ">
                 <ReactMarkdown
                     className={style.reactMarkDown}
-                    children={props.content}
                     rawSourcePos={true}
                     skipHtml={false}
                     remarkPlugins={[remarkBreaks, remarkGfm]}
                     rehypePlugins={[rehypeRaw]}
                     components={{
-                        code: (props) => CodeBlock({ ...props }),
+                        code: CodeBlock,
                     }}
-                />
+                >
+                    {props.content}
+                </ReactMarkdown>
                 <Script
+                    id="mermaid-parser-loader"
                     type="module"
                     strategy="afterInteractive"
                     dangerouslySetInnerHTML={{

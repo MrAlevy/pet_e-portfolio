@@ -94,7 +94,6 @@ export default function CodeBlock({ inline, className, children, ...props }) {
                     </div>
                 </div>
                 <SyntaxHighlighter
-                    children={String(children).replace(/\n$/, '')}
                     language={match[1]}
                     showLineNumbers
                     lineNumberStyle={{
@@ -108,7 +107,9 @@ export default function CodeBlock({ inline, className, children, ...props }) {
                         fontSize: '14px',
                     }}
                     {...props}
-                />
+                >
+                    {String(children).replace(/\n$/, '')}
+                </SyntaxHighlighter>
             </div>
         );
     } else {
