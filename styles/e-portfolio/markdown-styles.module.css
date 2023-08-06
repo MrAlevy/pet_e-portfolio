@@ -1,0 +1,32 @@
+.reactMarkDown ul {
+    list-style: disc outside none;
+}
+
+.reactMarkDown ul li {
+    margin-left: 2em;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.reactMarkDown .line-break {
+    white-space: pre-wrap;
+}
+
+.reactMarkDown h1 {
+    color: #afafaf;
+    font-weight: 900;
+}
+
+.reactMarkDown p {
+    text-align: justify;
+}
+
+.reactMarkDown table {
+    border-collapse: collapse;
+}
+
+.reactMarkDown th,
+.reactMarkDown td {
+    padding: 4px 8px;
+    border: 1px solid black;
+}
