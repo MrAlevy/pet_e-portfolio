@@ -38,10 +38,9 @@ export const ModuleSection = (props: { id: string; title: string; content: strin
                     strategy="afterInteractive"
                     dangerouslySetInnerHTML={{
                         __html: `
-        import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs";
-        mermaid.initialize({startOnLoad: true});
-        mermaid.contentLoaded();
-`,
+                          import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs";
+                          mermaid.initialize({startOnLoad: true});
+                          mermaid.contentLoaded();`,
                     }}
                 />
             </div>
