@@ -22,9 +22,9 @@ export default function Module(props: {
     // State to keep track of the active section
     const [activeSection, setActiveSection] = useState('');
 
-    const mainBackButtonRef = useRef<HTMLElement>(null);
+    const mainBackButtonRef = useRef<HTMLElement | null>(null);
 
-    const activeSectionRef = useRef<HTMLElement>(null);
+    const activeSectionRef = useRef<HTMLElement | null>(null);
     // Scroll to the section with the provided title
     const scrollToSection = (section: string) => {
         if (section === 'Learning Outcomes') {
@@ -270,6 +270,9 @@ const ActiveFrame = (props: {
                         const rect = document
                             .getElementById(`nav-item-${entry.target.id}`)
                             ?.getBoundingClientRect();
+                        if (!rect) {
+                            return;
+                        }
                         controls.start({ top: rect.y - rect.height / 2 });
                     }
                 });
@@ -283,15 +286,16 @@ const ActiveFrame = (props: {
         const notes = document.getElementById('Meeting Notes');
         const pdp = document.getElementById('PDP and Action Plan');
 
-        observer.observe(outcomes);
-        observer.observe(artefacts);
-        observer.observe(reflection);
-        observer.observe(notes);
-        observer.observe(pdp);
+        outcomes && observer.observe(outcomes);
+        artefacts && observer.observe(artefacts);
+        reflection && observer.observe(reflection);
+        notes && observer.observe(notes);
+        pdp && observer.observe(pdp);
 
         return () => {
             observer.disconnect();
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
