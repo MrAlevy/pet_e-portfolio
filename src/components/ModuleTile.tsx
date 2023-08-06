@@ -2,7 +2,17 @@ import { motion } from 'framer-motion';
 import chroma from 'chroma-js';
 import { useRouter } from 'next/dist/client/router';
 
-export default function ModuleTile({ index, module, disabled, colors }) {
+export default function ModuleTile({
+    index,
+    module,
+    disabled,
+    colors,
+}: {
+    index: number;
+    module: any;
+    disabled: boolean;
+    colors: string[];
+}) {
     const router = useRouter();
 
     const tileClickHandler = () => {

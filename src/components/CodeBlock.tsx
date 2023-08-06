@@ -2,12 +2,21 @@ import checkIcon from '@assets/icons/checkmark.svg';
 import copyIcon from '@assets/icons/copy.svg';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { useState } from 'react';
+import { ReactNode, useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import * as styles from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
-export default function CodeBlock({ inline, className, children, ...props }) {
+export default function CodeBlock({
+    inline,
+    className,
+    children,
+    ...props
+}: {
+    inline?: boolean;
+    className?: string;
+    children: ReactNode & ReactNode[];
+}) {
     const match = /language-(\w+)/.exec(className || '');
 
     const [tooltipVisible, setTooltipVisible] = useState(false);
