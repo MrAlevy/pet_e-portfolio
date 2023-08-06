@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import chroma from 'chroma-js';
 import { useRouter } from 'next/dist/client/router';
+import { generatePath } from '../helpers/generate-path';
 
 export default function ModuleTile({
     index,
@@ -17,7 +18,7 @@ export default function ModuleTile({
 
     const tileClickHandler = () => {
         if (!disabled) {
-            router.push(`${router.pathname}/${module.slug}`);
+            router.push(generatePath(module.slug));
         }
     };
 
