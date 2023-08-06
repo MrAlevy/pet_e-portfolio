@@ -326,7 +326,7 @@ export const getServerSideProps = async ({
     const edModule = MODULES_LIST.find((e) => e.slug === slug);
 
     if (!edModule) {
-        res.writeHead(302, { Location: '/e-portfolio' });
+        res.writeHead(302, { Location: process.env.NEXT_PUBLIC_ROOT_PATH });
         res.end();
         return { props: {} };
     }
