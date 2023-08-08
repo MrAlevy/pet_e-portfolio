@@ -52,9 +52,9 @@ export default function NavActiveItemFrame(props: {
         <motion.div
             style={{
                 height: 30,
-                width: '142%',
+                width: '255px',
                 position: 'absolute',
-                left: '-38%',
+                left: '-40%',
                 padding: '19px 10px',
                 backgroundColor: 'rgba(164, 255, 239, 0.38)',
                 zIndex: 20,
