@@ -1,8 +1,8 @@
 import { generatePath } from '@helpers';
+import { IModule } from '@types';
 import chroma from 'chroma-js';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/dist/client/router';
-import { IModule } from '../types';
 
 export default function ModuleTile({
     index,
@@ -46,10 +46,7 @@ export default function ModuleTile({
             onClick={tileClickHandler}
             style={{ minHeight: '140px' }}
         >
-            <a
-                className={`text-xl font-semibold mb-4 ${disabled ? 'text-gray-400' : ''}`}
-                style={{ zIndex: 200 }}
-            >
+            <a className={`text-xl font-semibold mb-4 ${disabled ? 'text-gray-400' : ''}`}>
                 {module.title}
             </a>
             <motion.div

@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-// Name format: id_title.md (e.g. 00_Initial theory.md)
 export const getMarkdownContent = (params: { moduleId: string }) => {
     const contentDir = path.join(process.cwd(), 'content', params.moduleId);
 

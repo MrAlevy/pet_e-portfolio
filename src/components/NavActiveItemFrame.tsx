@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
 import { generateNavElementId, generateSectionElementId } from '@helpers';
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
 
 export default function NavActiveItemFrame(props: {
     sectionIds: string[];
@@ -61,7 +61,7 @@ export default function NavActiveItemFrame(props: {
                 borderRadius: '30px',
                 boxShadow: '0px 0px 6px 0px rgba(0,0,0,0.75)',
             }}
-            initial={{ top: '6rem' }}
+            initial={{ top: '7rem' }}
             animate={controls}
         />
     );

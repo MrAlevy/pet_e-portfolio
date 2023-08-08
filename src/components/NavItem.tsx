@@ -1,5 +1,5 @@
+import { generateNavElementId } from '@helpers';
 import { motion } from 'framer-motion';
-import { generateNavElementId } from '../helpers';
 
 export default function NavItem({
     title,

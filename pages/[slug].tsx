@@ -57,7 +57,7 @@ export default function Module(props: {
                     <BackToMainButton />
 
                     {props.moduleSections?.length && (
-                        <nav>
+                        <nav style={{ marginTop: '-2rem' }}>
                             <NavActiveItemFrame
                                 sectionIds={props.moduleSections.map((e) => e.id)}
                                 setActiveSectionId={setActiveSectionId}

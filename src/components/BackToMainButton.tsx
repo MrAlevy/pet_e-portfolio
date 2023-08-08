@@ -11,13 +11,14 @@ export default function BackToMainButton() {
     return (
         <motion.div
             style={{
+                paddingTop: '2rem',
                 transition: 'color 0.3s ease',
             }}
             whileHover={{ scaleX: 1.02 }}
         >
             <Link href={rootPath}>
                 <div
-                    className="text-3xl font-bold text-gray-600 text-center"
+                    className="text-3xl font-bold text-gray-600 text-center justify-end"
                     style={{
                         display: 'flex',
                         alignItems: 'center',
