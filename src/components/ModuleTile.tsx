@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion';
-import chroma from 'chroma-js';
-import { useRouter } from 'next/dist/client/router';
 import { generatePath } from '@helpers';
+import chroma from 'chroma-js';
+import { motion } from 'framer-motion';
+import { useRouter } from 'next/dist/client/router';
 
 export default function ModuleTile({
     index,

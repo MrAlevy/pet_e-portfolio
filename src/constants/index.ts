@@ -10,25 +10,21 @@ export const MODULES_LIST: IModule[] = [
         id: '01',
         title: 'Object-oriented Information Systems',
         slug: 'object-oriented-information-systems',
-        disabled: true,
     },
     {
         id: '02',
         title: 'Secure Software Development',
         slug: 'secure-software-development',
-        disabled: true,
     },
     {
         id: '03',
         title: 'Network Security',
         slug: 'network-security',
-        disabled: true,
     },
     {
         id: '04',
         title: 'Information Security Management',
         slug: 'information-security-management',
-        disabled: true,
     },
     {
         id: '05',

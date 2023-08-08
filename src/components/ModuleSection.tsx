@@ -1,17 +1,25 @@
-import ReactMarkdown from 'react-markdown';
-import remarkBreaks from 'remark-breaks';
-import rehypeRaw from 'rehype-raw';
+import { generateSectionElementId } from '@helpers';
 import style from '@styles/e-portfolio/markdown-styles.module.css';
 import Script from 'next/script';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
+import remarkBreaks from 'remark-breaks';
 import remarkGfm from 'remark-gfm';
-
 import CodeBlock from './CodeBlock';
 
-export const ModuleSection = (props: { id: string; title: string; content: string }) => {
+export const ModuleSection = (props: {
+    sectionId: string;
+    title: string;
+    content: string;
+    isFirst: boolean;
+}) => {
     return (
-        <div id={props.id} className={`mb-16 ${props.id !== 'Learning Outcomes' ? 'pt-5' : ''}`}>
+        <div
+            id={generateSectionElementId({ sectionId: props.sectionId })}
+            className={`mb-16 ${!props.isFirst ? 'pt-5' : ''}`}
+        >
             <div
-                className="mb-6 border-4 border-b-8 border-r-8 border-gray-900 text-6xl p-4 pt-7 pb-7 font-mono"
+                className="mb-6 border-4 border-b-8 border-r-8 border-gray-900 text-6xl p-4 pt-7 pb-7 font-mono relative z-50"
                 style={{
                     backgroundColor: '#ffe2c6',
                 }}
@@ -19,7 +27,7 @@ export const ModuleSection = (props: { id: string; title: string; content: strin
                 {props.title}
             </div>
 
-            <div className="pl-4 pr-4 ">
+            <div className="pl-4 pr-4 relative z-50">
                 <ReactMarkdown
                     className={style.reactMarkDown}
                     rawSourcePos={true}

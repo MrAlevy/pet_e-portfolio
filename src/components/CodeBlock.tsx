@@ -22,7 +22,6 @@ export default function CodeBlock({
     const [tooltipVisible, setTooltipVisible] = useState(false);
     const [isCopyButtonVisible, setIsCopyButtonVisible] = useState(false);
 
-    // Function to show tooltip and hide it after a delay
     const showTooltip = () => {
         setTooltipVisible(true);
 
@@ -41,7 +40,6 @@ export default function CodeBlock({
                 onMouseEnter={() => setIsCopyButtonVisible(true)}
                 onMouseLeave={() => setIsCopyButtonVisible(false)}
             >
-                {/* Use CopyToClipboard component from the library */}
                 <div>
                     <div className="absolute z-50 w-full flex justify-end bg-transparent">
                         <CopyToClipboard

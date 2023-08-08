@@ -4,3 +4,9 @@ export interface IModule {
     slug: string;
     disabled?: boolean;
 }
+
+export interface ISection {
+    id: string;
+    title: string;
+    content: string;
+}

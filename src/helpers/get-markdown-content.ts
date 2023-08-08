@@ -2,28 +2,35 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-export const getMarkdownContent = (params: { filenames: string[]; moduleId: string }) => {
+// Name format: id_title.md (e.g. 00_Initial theory.md)
+export const getMarkdownContent = (params: { moduleId: string }) => {
     const contentDir = path.join(process.cwd(), 'content', params.moduleId);
 
-    const contentList = [];
-
-    for (const filename of params.filenames) {
-        const fullPath = path.join(contentDir, filename);
-
-        if (!fs.existsSync(contentDir)) {
-            fs.mkdirSync(contentDir);
-        }
-
-        if (!fs.existsSync(fullPath)) {
-            fs.writeFileSync(fullPath, '');
-        }
-
-        const fileContents = fs.readFileSync(fullPath, 'utf8');
-
-        const { content } = matter(fileContents);
-
-        contentList.push(content);
+    if (!fs.existsSync(contentDir)) {
+        fs.mkdirSync(contentDir);
     }
 
-    return contentList;
+    let result;
+
+    const filenames = fs.readdirSync(contentDir);
+
+    for (const filename of filenames) {
+        const fullPath = path.join(contentDir, filename);
+        const [id, title] = filename.split('_');
+
+        if (!id || !title) {
+            continue;
+        }
+
+        const fileContent = fs.readFileSync(fullPath, 'utf8');
+        const { content } = matter(fileContent);
+
+        if (!result) {
+            result = [];
+        }
+
+        result.push({ id, title: title?.slice(0, -3), content });
+    }
+
+    return result;
 };
