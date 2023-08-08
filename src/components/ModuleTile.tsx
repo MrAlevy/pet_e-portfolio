@@ -2,6 +2,7 @@ import { generatePath } from '@helpers';
 import chroma from 'chroma-js';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/dist/client/router';
+import { IModule } from '../types';
 
 export default function ModuleTile({
     index,
@@ -10,7 +11,7 @@ export default function ModuleTile({
     colors,
 }: {
     index: number;
-    module: any;
+    module: IModule;
     disabled: boolean;
     colors: string[];
 }) {

@@ -7,7 +7,7 @@ import { rootPath } from '@config';
 import { MODULES_LIST } from '@constants';
 import { generateNavElementId, generateSectionElementId, getMarkdownContent } from '@helpers';
 import { IModule, ISection } from '@types';
-import { GetServerSidePropsContext } from 'next';
+import { GetServerSidePropsContext, GetStaticPaths } from 'next';
 import Head from 'next/head';
 import { useRef, useState } from 'react';
 
@@ -146,7 +146,18 @@ export default function Module(props: {
     );
 }
 
-export const getServerSideProps = async ({
+export const getStaticPaths: GetStaticPaths = async () => {
+    return {
+        paths: MODULES_LIST.map((module) => ({
+            params: {
+                slug: module.slug,
+            },
+        })),
+        fallback: false,
+    };
+};
+
+export const getStaticProps = async ({
     params,
     res,
 }: GetServerSidePropsContext<{ slug: string }>) => {
