@@ -15,7 +15,6 @@ export default function Module(props: {
     moduleMeta: IModule;
     moduleSections: ISection[] | undefined | [];
 }) {
-    console.log(props.moduleSections);
     const [activeSectionId, setActiveSectionId] = useState(props.moduleSections?.[0]?.id || '');
     const activeSectionRef = useRef<HTMLElement | null>(null);
 
