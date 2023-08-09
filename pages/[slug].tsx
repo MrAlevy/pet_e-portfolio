@@ -52,6 +52,7 @@ export default function Module(props: {
                         marginLeft: '-14rem',
                         top: '1rem',
                         transition: 'color 0.3s ease',
+                        minWidth: '178px',
                     }}
                 >
                     <BackToMainButton />
