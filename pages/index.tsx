@@ -73,7 +73,7 @@ const AboutMe = () => {
                 >
                     LinkedIn
                 </a>
-                ! Or check source on{' '}
+                ! Check source on{' '}
                 <a
                     href="https://github.com/MrAlevy/pet_e-portfolio/"
                     target="_blank"
