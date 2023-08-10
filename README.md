@@ -1,38 +1,95 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# About
 
-## Getting Started
+Personal project for E-Portfolio for University of Essex Online.
 
-First, run the development server:
+To upload a content to the website use `content` folder.
+Each file in the folder will become a separate section on the module page. Modules list can be found in `constants` folder.
+File name should be prefixed with an unique for folder number (id) which also
+will be used to order sections on the page. File name itself will be used as a section title.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+# Content example
+
+Filename: `00_Learning Outcomes.md`
+
+````markdown
+# Paragraph example
+
+TODO:
+
+-   screen shrink headers adjustments
+-   header anchors
+-   navigation and/or current section indicator
+-   collapse/expand sections?
+
+</br>
+
+Hello!
+</br>
+
+This is a paragraph. First line. Lorem ipsum dolor sit amet, consectetur adipiscing elit. A lot of text here. Second line. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Third line. Lorem ipsum dolor sit amet, consectetur adipiscing elit. This is a paragraph. First line. Lorem ipsum dolor sit amet, consectetur adipiscing elit. A lot of text here. Second line. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Third line. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+A lot of text here. Second line.
+Third line.
+This is a paragraph. First line.
+A lot of text here. Second line.
+Third line.
+</br>
+
+Something _important_ and **bold**.
+</br>
+
+# List and table examples
+
+List
+
+-   Item 1
+-   Item 2
+-   Item 3
+
+</br>
+
+Table
+| Header 1 | Header 2 |
+| -------- | -------- |
+| Cell 1 | Cell 2 |
+| Cell 3 | Cell 4 |
+
+</br>
+
+# Diagram and code examples
+
+Mermaid diagram
+
+<pre class="mermaid flex justify-center mb-5">
+graph LR
+  Start --> Stop
+  Start --> A
+  A --> B
+  B --> Stop
+  A --> C
+  C --> Stop
+</pre>
+
+This is an inline code example. You can run `println!("Hello world!");` in Rust.
+</br>
+
+Fibonacci sequence
+
+```typescript
+function fibonacci(n: number): number {
+    if (n <= 1) {
+        return n;
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+</br>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+SQL query example
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```sql
+SELECT * FROM table
+WHERE column_1 = 'value' AND column_2 = 'value2'
+LIMIT 10;
+```
+````
