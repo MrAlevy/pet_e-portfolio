@@ -42,7 +42,7 @@ const Title = () => {
                 className="text-3xl font-bold"
                 style={{
                     letterSpacing: '15px',
-                    fontStretch: 'extra-expanded',
+                    fontStretch: 'semi-expanded',
                 }}
             >
                 E-Portfolio

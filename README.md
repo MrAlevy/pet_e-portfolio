@@ -7,20 +7,23 @@ Each file in the folder will become a separate section on the module page. Modul
 File name should be prefixed with an unique for folder number (id) which also
 will be used to order sections on the page. File name itself will be used as a section title.
 
-# Content example
+# Development
+To run the project locally, you need to have Node.js installed. Then run the following commands:
 
+```bash
+npm install
+npm run dev
+```
+
+# Content example
+Content file should be a markdown file with a specific structure. Each section should start with a header and contain a list of learning outcomes. The file should be placed in the `content` folder.
+There is a markdown parser on the server that will convert the file into a JSON object and then into HTML.
+
+```markdown
 Filename: `00_Learning Outcomes.md`
 
 ````markdown
 # Paragraph example
-
-TODO:
-
--   screen shrink headers adjustments
--   header anchors
--   navigation and/or current section indicator
--   collapse/expand sections?
-
 </br>
 
 Hello!
@@ -71,25 +74,27 @@ graph LR
 
 This is an inline code example. You can run `println!("Hello world!");` in Rust.
 </br>
+````
 
 Fibonacci sequence
 
-```typescript
+````typescript
 function fibonacci(n: number): number {
     if (n <= 1) {
         return n;
     }
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
-```
+````
 
 </br>
 
 SQL query example
 
-```sql
+````sql
 SELECT * FROM table
 WHERE column_1 = 'value' AND column_2 = 'value2'
 LIMIT 10;
-```
 ````
+
+```
