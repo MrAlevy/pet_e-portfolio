@@ -14,7 +14,7 @@ export default function ePortfolio() {
         <div className="min-h-screen py-10 px-4 flex flex-col justify-between bg-gray-100 max-h-screen">
             <Title />
 
-            <div className="max-w-3xl mx-auto mb-9">
+            <div className="max-w-3xl mx-auto mb-7">
                 <AboutMe />
 
                 <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -61,8 +61,10 @@ const AboutMe = () => {
                 backend. Recently, I've been working as a team lead, with a focus on utilizing AWS
                 cloud services to build a scalable and reliable service that is used by millions of
                 users all over the world. I'm continuously learning new technologies and enhancing
-                my skills. Currently, I'm just about to start using Rust in production at work.
-                Also, I'm studying for an MSc CS at the University of Essex Online.`}
+                my skills.`}
+                <br /> 
+                {`I use Rust, TypeScript, Go and Python at work. Have a big experience with React. 
+                I'm also a big fan of LeetCode and DSA problems.`}
                 <br />
                 <br /> Feel free to check out my CV and connect with me on{' '}
                 <a
