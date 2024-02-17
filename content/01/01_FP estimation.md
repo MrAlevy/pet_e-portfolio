@@ -3,7 +3,7 @@
 This program is designed to estimate Function Points (FP) using the Function Point analysis method. The estimation involves two steps: counting user functions (FC) and adjusting for processing complexity (PCA). The PCA is determined based on complexity factors (ci) associated with different aspects of the software project.
 </br>
 
-### Function Point Calculation
+## Function Point Calculation
 
 The core calculation is performed by the `calculate_fp` function. It takes the user input for **Function Counts (FC)** and a list of complexity factors (ci_values) as input. The PCA is computed using the provided formula `PCA = 0.65 + 0.01 * Σ ci`. The **Adjusted Function Point (AFP)** is then calculated as the product of FC and PCA.
 </br>
