@@ -1,3 +1,3 @@
 export const generateSectionElementId = (params: { sectionId: string }) => {
-    return `module-section-${params.sectionId}`;
+  return `module-section-${params.sectionId}`;
 };
