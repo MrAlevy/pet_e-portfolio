@@ -14,7 +14,7 @@ All these risks show how tricky it can be to work with a team that's not all in 
 **References**
 - Anton, S.G. and Nucu, A.E.A. (2020) ‘Enterprise Risk Management: A Literature Review and Agenda for Future Research’, Journal of Risk and Financial Management, 13(11), p. 281.
 - Verner, J.M. et al. (2014) ‘Risks and risk mitigation in global software development: A tertiary study’, Information and Software Technology, 56(1), pp. 54–78.
-
+</br>
 </br>
 
 # Project Failure

@@ -4,7 +4,7 @@
 | Role Distribution and Team Dynamics     | Intermediate  | Continue to develop my skills in understanding and assigning roles effectively. Encourage rotating roles in future projects for broader understanding. |
 | Project Planning and Cost Estimations   | Beginner      | Seek additional training and practice in detailed project planning and budget management. Apply learnings in upcoming projects. |
 | Requirement Analysis and Justifications | Intermediate  | Enhance my ability to critique and justify project requirements by engaging in more complex projects and seeking feedback. |
-| Communication and Management            | Beginner      | Focus on improving communication skills and management techniques. Plan and lead more team meetings to gain experience. |
+| Communication and Management            | Intermediate      | Focus on improving communication skills and management techniques. Plan and lead more team meetings to gain experience. |
 | Adaptability in Team Settings           | Advanced      | Maintain adaptability and apply this skill in diverse team environments. Share knowledge and strategies with peers. |
 | Review and Quality Control              | Beginner      | Work on implementing a structured review process in future projects. Seek mentorship or training in quality control methods. |
 | Project Complexity Estimation           | Beginner      | Practice various estimation methods on real projects with known outcomes and supplement this practice by reading additional literature on the subject. |

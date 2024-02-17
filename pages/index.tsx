@@ -63,7 +63,7 @@ const AboutMe = () => {
                 users all over the world. I'm continuously learning new technologies and enhancing
                 my skills.`}
                 <br /> 
-                {`I use Rust, TypeScript, Go and Python at work. Have a big experience with React. 
+                {`I work with AWS. My tech stack includes Rust, TypeScript, Go, and Python. I have a big experience with React. 
                 I'm also a big fan of LeetCode and DSA problems.`}
                 <br />
                 <br /> Feel free to check out my CV and connect with me on{' '}
