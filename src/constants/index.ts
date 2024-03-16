@@ -17,7 +17,7 @@ export const MODULES_LIST: IModule[] = [
     id: "02",
     title: "Object-oriented Information Systems",
     slug: "object-oriented-information-systems",
-    disabled: true,
+    disabled: false,
   },
   {
     id: "03",
