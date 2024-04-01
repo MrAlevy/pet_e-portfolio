@@ -137,23 +137,6 @@ Figuring out how to use the car’s features was simple. Alex can tell the car w
 
 </br>
 
-<pre class="mermaid flex justify-center mb-5">
-graph TD
-    A[Driverless Car User: Alex]
-    B[Car's Navigation System]
-    C[Car's Settings]
-    D[Car's Dashboard]
-    E[Car's Communication System]
-    F[Car's Manual Control]
-    G[Car's Maintenance Scheduler]
-    H[Car's Support System]
-
-    A --> B(Set Destination)
-    B --> C(Adjust Travel Preferences)
-    C --> D(Monitor Vehicle Status)
-    D --> E(Receive Traffic and Weather Updates)
-    E --> F(Manual Override Controls)
-    F --> G(Schedule Maintenance)
-    G --> H(Contact Support)
-
-</pre>
+<div align="center">
+  <img src="/images/02_01_use_case_diagram.svg" alt="Use Case Diagram"  style="min-width: 70%;">
+</div>
