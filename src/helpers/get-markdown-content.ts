@@ -22,7 +22,19 @@ export const getMarkdownContent = (params: { moduleId: string }) => {
     }
 
     const fileContent = fs.readFileSync(fullPath, "utf8");
-    const { content } = matter(fileContent);
+    let { content } = matter(fileContent);
+
+    // Replace relative image paths with absolute paths
+    const assetPrefix = process.env.NEXT_PUBLIC_ASSET_PREFIX;
+
+    if (assetPrefix) {
+      content = content.replace(
+        /!\[([^\]]+)\]\((\/images\/[^)]+)\)/g,
+        (_, alt, src) => {
+          return `![${alt}](${assetPrefix}${src})`;
+        },
+      );
+    }
 
     if (!result) {
       result = [];

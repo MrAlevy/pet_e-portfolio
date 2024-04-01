@@ -16,10 +16,12 @@ export default function NavActiveItemFrame(props: {
     const scrollPosition = window.scrollY;
     let newActiveSectionId = null;
     for (let sectionId of props.sectionIds) {
-      const sectionElement = document.getElementById( generateSectionElementId({ sectionId }));
+      const sectionElement = document.getElementById(
+        generateSectionElementId({ sectionId }),
+      );
       if (sectionElement) {
         const { top, bottom, y } = sectionElement.getBoundingClientRect();
-        console.log("top", top, "bottom", bottom, "y", y, "scrollPosition", scrollPosition, "sectionId", sectionId);
+        
         if (top <= 500 && bottom >= 0) {
           newActiveSectionId = sectionId;
           break;
@@ -33,9 +35,9 @@ export default function NavActiveItemFrame(props: {
   }, 100);
 
   useEffect(() => {
-    window.addEventListener('scroll', checkActiveSectionOnScroll);
+    window.addEventListener("scroll", checkActiveSectionOnScroll);
     return () => {
-      window.removeEventListener('scroll', checkActiveSectionOnScroll);
+      window.removeEventListener("scroll", checkActiveSectionOnScroll);
     };
   }, [checkActiveSectionOnScroll]);
 
