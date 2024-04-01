@@ -137,6 +137,4 @@ Figuring out how to use the car’s features was simple. Alex can tell the car w
 
 </br>
 
-<div align="center">
-  <img src="/images/02_01_use_case_diagram.svg" alt="Use Case Diagram"  style="min-width: 70%;">
-</div>
+![Use Case Diagram](/images/02_01_use_case_diagram.svg)

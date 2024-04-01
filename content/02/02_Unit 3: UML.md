@@ -44,6 +44,7 @@ ___Making reference to ‘The Unified Modeling Language Reference Manual Second 
 
 **Original diagram:**
 ![State Machine Diagram](/images/02_02_state_machine_diagram.png)
+
 _Figure 3-7, State Machine Diagram (Rumbaugh et al. 2005)_
 </br>
 

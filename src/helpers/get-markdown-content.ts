@@ -31,7 +31,8 @@ export const getMarkdownContent = (params: { moduleId: string }) => {
       content = content.replace(
         /!\[([^\]]+)\]\((\/images\/[^)]+)\)/g,
         (_, alt, src) => {
-          return `![${alt}](${assetPrefix}${src})`;
+          const fullSrc = `${assetPrefix}${src}`;
+          return `<div align="center"><img src="${fullSrc}" alt="${alt}" style="min-width: 70%;"/></div>`;
         },
       );
     }
