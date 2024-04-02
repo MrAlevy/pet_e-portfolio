@@ -25,17 +25,15 @@ export const getMarkdownContent = (params: { moduleId: string }) => {
     let { content } = matter(fileContent);
 
     // Replace relative image paths with absolute paths
-    const assetPrefix = process.env.NEXT_PUBLIC_ASSET_PREFIX;
+    const assetPrefix = process.env.NEXT_PUBLIC_ASSET_PREFIX || '';
 
-    if (assetPrefix) {
       content = content.replace(
         /!\[([^\]]+)\]\((\/images\/[^)]+)\)/g,
         (_, alt, src) => {
           const fullSrc = `${assetPrefix}${src}`;
-          return `<div align="center"><img src="${fullSrc}" alt="${alt}" style="min-width: 70%;"/></div>`;
+          return `<div align="center"><img src="${fullSrc}" alt="${alt}"/></div>`;
         },
       );
-    }
 
     if (!result) {
       result = [];
