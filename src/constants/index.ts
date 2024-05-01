@@ -21,14 +21,14 @@ export const MODULES_LIST: IModule[] = [
   },
   {
     id: "03",
-    title: "Secure Software Development",
-    slug: "secure-software-development",
-    disabled: true,
+    title: "Network Security",
+    slug: "network-security",
+    disabled: false,
   },
   {
     id: "04",
-    title: "Network Security",
-    slug: "network-security",
+    title: "Secure Software Development",
+    slug: "secure-software-development",
     disabled: true,
   },
   {
