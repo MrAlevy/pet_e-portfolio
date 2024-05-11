@@ -137,4 +137,4 @@ Figuring out how to use the car’s features was simple. Alex can tell the car w
 
 </br>
 
-![Use Case Diagram](/images/02_01_use_case_diagram.svg)
+![Use Case Diagram](/images/02_01_use_case_diagram.png)
