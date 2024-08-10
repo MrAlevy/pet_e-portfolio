@@ -27,15 +27,15 @@ export const MODULES_LIST: IModule[] = [
   },
   {
     id: "04",
-    title: "Secure Software Development",
-    slug: "secure-software-development",
+    title: "Information Security Management",
+    slug: "information-security-management",
     disabled: true,
   },
   {
     id: "05",
-    title: "Information Security Management",
-    slug: "information-security-management",
-    disabled: true,
+    title: "Secure Software Development",
+    slug: "secure-software-development",
+    disabled: false,
   },
   {
     id: "06",
