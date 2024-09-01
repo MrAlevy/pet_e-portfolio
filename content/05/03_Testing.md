@@ -68,3 +68,48 @@ However, Cyclomatic Complexity is still relevant because it directly ties to cod
 **References**
 - Ferrer, J., Chicano, F. & Alba, E. (2013) ‘Estimating software testing complexity’, Information and Software Technology, 55(12), pp. 2125–2139.
 - Shepperd, M. (1998) ‘A critique of cyclomatic complexity as a software metric’, Software Engineering Journal, 3(2), pp. 30–36.
+</br>
+</br>
+
+
+# Exploring Linters to Support Testing
+
+**Question 1**
+When the code is run, it raises an `IndentationError: expected an indented block` because Python expects indented code after the function definition. The code can be modified by correctly indenting the block following the function definition.
+```python
+def factorial(n):
+    """ Return factorial of n """
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+```
+
+</br>
+
+**Question 2**
+When running `pylint` on `pylintTest.py`, the error `E0001: Parsing failed: 'Missing parentheses in call to 'print'. Did you mean print(...)?` occurs. This error is due to the use of the print statement without parentheses, which is valid in Python 2 but not in Python 3.
+To correct this error, the print statement should be updated to use parentheses: `print(encoded)`.
+</br>
+
+**Question 3**
+When running `flake8` on `pylintTest.py`, the error `E999 SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?` occurs. This error is the same as the one reported by `pylint` and highlights the need for parentheses around the `print` function for Python 3 compatibility. While `pylint` identifies this as a syntax error, `flake8` also flags it as `E999`, but the issue remains the same.
+
+Running `flake8` on `metricTest.py` returns the error `E999 SyntaxError: invalid character '–' (U+2013)` on line 25. This error is caused by using an en dash (`–`, U+2013) instead of a regular hyphen (`-`) in the subtraction operation. To correct the errors, parentheses must be added to the `print` statement in `pylintTest.py` and replaced the en dash with a regular hyphen in `metricTest.py`, ensuring the code is syntactically correct.
+</br>
+
+**Question 4**
+When running `mccabe` on `sums.py`, the output shows that the cyclomatic complexity for the function `test_sum` is `1`, with an additional complexity of `2` contributed by the `if` statement. This gives a total cyclomatic complexity score of `2` for the `sums.py` file.
+
+For `sums2.py`, the output shows that the cyclomatic complexity for `test_sum` is `1` and for `test_sum_tuple` is also `1`. The `if` statement contributes an additional complexity of `2`, resulting in a total cyclomatic complexity score of `3` for the `sums2.py` file.
+_Contributors to Cyclomatic Complexity_
+- **`sums.py`**: 
+  - The `if` statement at the bottom of the file contributes to the cyclomatic complexity, as it introduces one decision point.
+- **`sums2.py`**:
+   - Similarly, the `if` statement contributes to the complexity.
+   - The addition of the `test_sum_tuple` function also increases the overall complexity, as each function adds to the total score.
+</br>
+In summary, the cyclomatic complexity for `sums.py` is lower because it contains only one function and one decision point. `sums2.py` has a higher complexity due to the additional function `test_sum_tuple`, making the code slightly more complex in terms of the number of independent paths.
+
+</br>
+
