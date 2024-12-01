@@ -1,18 +1,10 @@
 <div style="background-color: #fff8db; border: 1px solid #f7d67d; padding: 15px; border-radius: 5px; font-family: Arial, sans-serif; font-size: 16px;  margin-bottom: 40px">
   📁 Click 
-  <a href="/exercises/Unit7.zip" style="color: #0073e6; text-decoration: underline; font-weight: bold;">here</a> 
+  <a href="https://pet-e-portfolio.vercel.app/exercises/unit7.zip" style="color: #0073e6; text-decoration: underline; font-weight: bold;">here</a> 
   to download the archive containing the following exercise files with solutions:
   <ul style="margin-top: 10px; padding-left: 20px; font-size: 16px;">
-    <li>Exe 7.4F</li>
-    <li>Exe 7.6B</li>
-    <li>Exe 7.1B</li>
-    <li>Exe 7.2B</li>
-    <li>Exe 7.3D</li>
-    <li>Exe 8.6C</li>
-    <li>Exe 8.4G</li>
-    <li>Exe 8.1B</li>
-    <li>Exe 8.2B</li>
-    <li>Exe 8.3D</li>
+    <li>Exe 7.1B, Exe 7.2B, Exe 7.3D, Exe 7.4F, Exe 7.6B</li>
+    <li>Exe 8.1B, Exe 8.2B, Exe 8.3D, Exe 8.4G, Exe 8.6C</li>
   </ul>
 </div>
 
