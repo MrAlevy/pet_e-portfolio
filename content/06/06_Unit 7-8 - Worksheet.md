@@ -1,9 +1,11 @@
+# Inferential Statistics and Hypothesis Testing; Data Analysis and Visualisation
+
 <div style="background-color: #fff8db; border: 1px solid #f7d67d; padding: 15px; border-radius: 5px; font-family: Arial, sans-serif; font-size: 16px;  margin-bottom: 40px">
   📁 Click 
   <a href="https://pet-e-portfolio.vercel.app/exercises/unit7.zip" style="color: #0073e6; text-decoration: underline; font-weight: bold;">here</a> 
   to download the archive containing the following exercise files with solutions:
   <ul style="margin-top: 10px; padding-left: 20px; font-size: 16px;">
-    <li>Exe 7.1B, Exe 7.2B, Exe 7.3D, Exe 7.4F, Exe 7.6B</li>
+    <li>Exa 7.1B, Exa 7.2B, Exa 7.3D, Exa 7.4F, Exa 7.6B</li>
     <li>Exe 8.1B, Exe 8.2B, Exe 8.3D, Exe 8.4G, Exe 8.6C</li>
   </ul>
 </div>
@@ -23,14 +25,14 @@ If a **one-tailed test** had been used to check whether **Filter Agent 1** is be
 <br/>
 
 **Context**
-Previously, a two-tailed independent samples \( t \)-test was done to check if there was a difference in the average impurity levels between the two filtration agents in **Data Set G**. This test gave a \( p \)-value above 0.05, meaning no significant difference was found at the 5% level.
+Previously, a two-tailed independent samples t-test was done to check if there was a difference in the average impurity levels between the two filtration agents in **Data Set G**. This test gave a p-value above 0.05, meaning no significant difference was found at the 5% level.
 
 A one-tailed test, instead, would focus only on the idea that **Filter Agent 1** is more effective (i.e., it reduces impurity levels more than **Filter Agent 2**). This approach looks for a difference in only one direction, which increases the test's power by using the entire significance level (\( \alpha = 0.05 \)) for one tail of the distribution.
 
 **Possible Outcomes**
 
-- If the one-tailed test resulted in a \( p \)-value less than 0.05, it would show **statistically significant evidence** at the 5% level to support that **Filter Agent 1** is more effective than **Filter Agent 2**.
-- If the one-tailed test gave a \( p \)-value greater than or equal to 0.05, the result would be the same as the two-tailed test: no evidence to suggest that **Filter Agent 1** is better.
+- If the one-tailed test resulted in a p-value less than 0.05, it would show **statistically significant evidence** at the 5% level to support that **Filter Agent 1** is more effective than **Filter Agent 2**.
+- If the one-tailed test gave a p-value greater than or equal to 0.05, the result would be the same as the two-tailed test: no evidence to suggest that **Filter Agent 1** is better.
 
 **Conclusion**
 
