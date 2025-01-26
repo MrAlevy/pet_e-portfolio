@@ -24,6 +24,7 @@ To conclude, both my tutor's comments and my own thinking show that I need to lo
 - PayScale. (2022) The State of the Gender Pay Gap 2022. Available from: https://www.payscale.com/data/gender-pay-gap [Accessed 30 November 2024].
 
 </br>
+</br>
 
 # Reflection on the Research Proposal Presentation
 
@@ -32,3 +33,14 @@ To conclude, both my tutor's comments and my own thinking show that I need to lo
   <a href="https://pet-e-portfolio.vercel.app/exercises/research-proposal-presentation-summative-feedback.pdf" style="color: #0073e6; text-decoration: underline; font-weight: bold;">here</a> 
   to download the Summative Feedback for the Research Proposal Presentation.
 </div>
+
+Looking back at my Research Proposal Presentation and the tutor's feedback, I am pleased that my knowledge, critical thinking, and communication were rated as excellent. The tutor appreciated how I presented the topic in a clear, focused, and chronological way, showing a good understanding of the content. They also highlighted how my critical analysis flowed naturally, supported by strong theories and research.
+</br>
+
+However, there are areas I could improve for future presentations. While the structure was good, the tutor suggested making the presentation more visually engaging. To address this, I could include more visual elements, like charts and infographics, to highlight key data and examples from both large companies and startups. This would make it easier for the audience to understand why changes like transparent pay systems are important.
+</br>
+
+Although my presentation speed and introduction were praised, I realize I could make the connections between slides stronger. Clearly linking data points and arguments would help keep the presentation engaging and make practical suggestions, like the Employer Toolkit and Policy Brief, even clearer.
+</br>
+
+To conclude, by improving my visual elements and making clearer connections between ideas, I could strengthen my presentation skills while maintaining the strong theoretical foundation that was praised in the feedback.
