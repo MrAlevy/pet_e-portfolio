@@ -2,7 +2,7 @@
 
 <div style="background-color: #fff8db; border: 1px solid #f7d67d; padding: 15px; border-radius: 5px; font-family: Arial, sans-serif; font-size: 16px;  margin-bottom: 40px">
   📁 Click 
-  <a href="https://pet-e-portfolio.vercel.app/exercises/unit7.zip" style="color: #0073e6; text-decoration: underline; font-weight: bold;">here</a> 
+  <a href="https://pet-e-portfolio.vercel.app/exercises/unit7.zip" style="color: #0073e6; text-decoration: underline; font-weight: bold;" target="_blank">here</a> 
   to download the archive containing the following exercise files with solutions:
   <ul style="margin-top: 10px; padding-left: 20px; font-size: 16px;">
     <li>Exa 7.1B, Exa 7.2B, Exa 7.3D, Exa 7.4F, Exa 7.6B</li>

@@ -4,7 +4,7 @@
 
 <div style="background-color: #fff8db; border: 1px solid #f7d67d; padding: 15px; border-radius: 5px; font-family: Arial, sans-serif; font-size: 16px;  margin-bottom: 40px">
   📁 Click 
-  <a href="https://pet-e-portfolio.vercel.app/exercises/statistical-worksheet-formative-feedback.pdf" style="color: #0073e6; text-decoration: underline; font-weight: bold;">here</a> 
+  <a href="https://pet-e-portfolio.vercel.app/exercises/statistical-worksheet-formative-feedback.pdf" style="color: #0073e6; text-decoration: underline; font-weight: bold;" target="_blank">here</a> 
   to download the Formative Feedback for RRMP Statistical worksheets.
 </div>
 

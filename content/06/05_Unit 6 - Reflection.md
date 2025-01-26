@@ -2,7 +2,7 @@
 
 <div style="background-color: #fff8db; border: 1px solid #f7d67d; padding: 15px; border-radius: 5px; font-family: Arial, sans-serif; font-size: 16px;  margin-bottom: 40px">
   📁 Click 
-  <a href="https://pet-e-portfolio.vercel.app/exercises/literature-review-summative-feedback.pdf" style="color: #0073e6; text-decoration: underline; font-weight: bold;">here</a> 
+  <a href="https://pet-e-portfolio.vercel.app/exercises/literature-review-summative-feedback.pdf" style="color: #0073e6; text-decoration: underline; font-weight: bold;" target="_blank">here</a> 
   to download the Summative Feedback for the Literature Review.
 </div>
 
@@ -30,7 +30,7 @@ To conclude, both my tutor's comments and my own thinking show that I need to lo
 
 <div style="background-color: #fff8db; border: 1px solid #f7d67d; padding: 15px; border-radius: 5px; font-family: Arial, sans-serif; font-size: 16px;  margin-bottom: 40px">
   📁 Click 
-  <a href="https://pet-e-portfolio.vercel.app/exercises/research-proposal-presentation-summative-feedback.pdf" style="color: #0073e6; text-decoration: underline; font-weight: bold;">here</a> 
+  <a href="https://pet-e-portfolio.vercel.app/exercises/research-proposal-presentation-summative-feedback.pdf" style="color: #0073e6; text-decoration: underline; font-weight: bold;" target="_blank">here</a> 
   to download the Summative Feedback for the Research Proposal Presentation.
 </div>
 
